@@ -17,8 +17,8 @@ This repository contains test cases to validate the login screen of the Sapphire
 **Expected Result:** The user should be logged in successfully and directed to the campaign dashboard.
 
 #### Test Case 2: Remember Me Functionality
-- **Description:** Verify that the page title of login screen.
-- **Steps:**
+**Description:** Verify that the page title of login screen.
+**Steps:**
   1. Open the Sapphire login page.
   2. Check the page title.
   **Expected Result:** After logging out and revisiting the login page, the page title should be displayed as expected.
