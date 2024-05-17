@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-16T08:52:48.346960" rpa="false" schemaversion="5">
+<suite id="s1" name="validLogin3" source="C:\Users\lenovo\PycharmProjects\SapphireLogin\test\validLogin3.robot">
+<test id="s1-t1" name="invalid_username Test" line="12">
+<kw name="Open Browser With Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:52:48.733783" level="INFO">Opening browser 'chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T08:52:48.733783" elapsed="4.865487"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:52:48.732786" elapsed="4.866484"/>
+</kw>
+<kw name="Login with Invalid credentials should be fail">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:52:53.602260" level="INFO">Typing text 'Kasuri' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:52:53.601262" elapsed="0.142823"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:52:53.745083" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-05-16T08:52:53.783522" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:52:53.745083" elapsed="0.116136"/>
+</kw>
+<kw name="Submit Login Form">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T08:52:53.861861" elapsed="0.033118"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T08:52:53.894979" elapsed="0.301991"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:52:54.197963" level="INFO">Clicking button 'xpath://button[@id='login-button']'.</msg>
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:52:54.197963" elapsed="0.087765"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:52:53.861861" elapsed="0.423867"/>
+</kw>
+<arg>${invalid_username}</arg>
+<arg>${valid_password}</arg>
+<status status="PASS" start="2024-05-16T08:52:53.600266" elapsed="0.686461"/>
+</kw>
+<doc>Test with an invalid username</doc>
+<status status="PASS" start="2024-05-16T08:52:48.731789" elapsed="5.554938"/>
+</test>
+<test id="s1-t2" name="invalid_password Test" line="17">
+<kw name="Open Browser With Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:52:54.293707" level="INFO">Opening browser 'chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T08:52:54.292711" elapsed="4.681569"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:52:54.292711" elapsed="4.681569"/>
+</kw>
+<kw name="Login with Invalid credentials should be fail">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:52:58.993232" level="INFO">Typing text 'agency@sapphireapps.com' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:52:58.989239" elapsed="0.253790"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:52:59.244030" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-05-16T08:52:59.280921" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:52:59.244030" elapsed="0.093014"/>
+</kw>
+<kw name="Submit Login Form">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T08:52:59.338040" elapsed="0.027024"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T08:52:59.365064" elapsed="0.296309"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:52:59.662370" level="INFO">Clicking button 'xpath://button[@id='login-button']'.</msg>
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:52:59.661373" elapsed="0.640965"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:52:59.338040" elapsed="0.964298"/>
+</kw>
+<arg>${valid_username}</arg>
+<arg>${invalid_password}</arg>
+<status status="PASS" start="2024-05-16T08:52:58.985251" elapsed="1.317087"/>
+</kw>
+<doc>Test with an invalid password</doc>
+<status status="PASS" start="2024-05-16T08:52:54.291713" elapsed="6.012620"/>
+</test>
+<test id="s1-t3" name="invalid_username and invalid_password Test" line="22">
+<kw name="Open Browser With Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:00.308323" level="INFO">Opening browser 'chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T08:53:00.308323" elapsed="5.396402"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:53:00.307324" elapsed="5.398397"/>
+</kw>
+<kw name="Login with Invalid credentials should be fail">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:05.711705" level="INFO">Typing text 'Kasuri' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:05.709708" elapsed="0.186750"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:05.897457" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-05-16T08:53:05.928441" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:05.897457" elapsed="0.088850"/>
+</kw>
+<kw name="Submit Login Form">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T08:53:05.987760" elapsed="0.035903"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T08:53:06.023663" elapsed="0.296209"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:06.319872" level="INFO">Clicking button 'xpath://button[@id='login-button']'.</msg>
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:06.319872" elapsed="0.088763"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:53:05.986762" elapsed="0.421873"/>
+</kw>
+<arg>${invalid_username}</arg>
+<arg>${invalid_password}</arg>
+<status status="PASS" start="2024-05-16T08:53:05.707716" elapsed="0.700919"/>
+</kw>
+<doc>Test with an invalid username and password</doc>
+<status status="PASS" start="2024-05-16T08:53:00.306330" elapsed="6.105296"/>
+</test>
+<test id="s1-t4" name="Empty_username Test" line="27">
+<kw name="Open Browser With Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:06.414623" level="INFO">Opening browser 'chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T08:53:06.414623" elapsed="5.609821"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:53:06.413621" elapsed="5.610823"/>
+</kw>
+<kw name="Login with Invalid credentials should be fail">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:12.036412" level="INFO">Typing text '' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:12.035415" elapsed="0.152260"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:12.187675" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-05-16T08:53:12.233092" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:12.187675" elapsed="0.177437"/>
+</kw>
+<kw name="Submit Login Form">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T08:53:12.365446" elapsed="0.051807"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T08:53:12.418249" elapsed="0.310171"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:12.729418" level="INFO">Clicking button 'xpath://button[@id='login-button']'.</msg>
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:12.729418" elapsed="0.099733"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:53:12.365446" elapsed="0.463705"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${valid_password}</arg>
+<status status="PASS" start="2024-05-16T08:53:12.031426" elapsed="0.797725"/>
+</kw>
+<doc>Test with an empty username</doc>
+<status status="PASS" start="2024-05-16T08:53:06.412624" elapsed="6.419518"/>
+</test>
+<test id="s1-t5" name="Empty_password Test" line="32">
+<kw name="Open Browser With Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:12.856084" level="INFO">Opening browser 'chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T08:53:12.856084" elapsed="5.883218"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:53:12.855081" elapsed="5.884221"/>
+</kw>
+<kw name="Login with Invalid credentials should be fail">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:18.748279" level="INFO">Typing text 'agency@sapphireapps.com' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:18.747282" elapsed="0.193841"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:18.941123" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-05-16T08:53:18.981019" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:18.941123" elapsed="0.091699"/>
+</kw>
+<kw name="Submit Login Form">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T08:53:19.033848" elapsed="0.028394"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T08:53:19.062242" elapsed="0.293949"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:19.357188" level="INFO">Clicking button 'xpath://button[@id='login-button']'.</msg>
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:19.357188" elapsed="0.128062"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:53:19.032822" elapsed="0.452428"/>
+</kw>
+<arg>${valid_username}</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2024-05-16T08:53:18.744291" elapsed="0.740959"/>
+</kw>
+<doc>Test with an empty password</doc>
+<status status="PASS" start="2024-05-16T08:53:12.837129" elapsed="6.650122"/>
+</test>
+<test id="s1-t6" name="Empty_username And Empty_password Test" line="37">
+<kw name="Open Browser With Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:19.491234" level="INFO">Opening browser 'chrome' to base url 'https://testing.sapphireapps.com/authentication/login/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T08:53:19.490237" elapsed="4.305268"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:53:19.490237" elapsed="4.305268"/>
+</kw>
+<kw name="Login with Invalid credentials should be fail">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:23.808470" level="INFO">Typing text '' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:23.808470" elapsed="2.025977"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:25.835443" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg time="2024-05-16T08:53:25.878838" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:25.834447" elapsed="0.100431"/>
+</kw>
+<kw name="Submit Login Form">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-16T08:53:25.935688" elapsed="0.035903"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-05-16T08:53:25.971591" elapsed="0.316153"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-16T08:53:26.288742" level="INFO">Clicking button 'xpath://button[@id='login-button']'.</msg>
+<arg>xpath://button[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-16T08:53:26.287744" elapsed="0.127660"/>
+</kw>
+<status status="PASS" start="2024-05-16T08:53:25.935688" elapsed="0.480713"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2024-05-16T08:53:23.806475" elapsed="2.609926"/>
+</kw>
+<doc>Test with an empty username and password</doc>
+<status status="PASS" start="2024-05-16T08:53:19.488243" elapsed="6.935140"/>
+</test>
+<doc>A test with a single test for valid login</doc>
+<status status="PASS" start="2024-05-16T08:52:48.347958" elapsed="38.076422"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="validLogin3">validLogin3</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-16T08:52:48.645644" level="ERROR">Error in file 'C:\Users\lenovo\PycharmProjects\SapphireLogin\test\validLogin3.robot' on line 3: Initializing library 'SeleniumLibrary' with arguments [ This test has a workflow that is created using keywords in | The imported resource file ] failed: ValueError: Invalid time string 'This test has a workflow that is created using keywords in'.
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\SeleniumLibrary\__init__.py", line 475, in __init__
+    self.timeout = _convert_timeout(timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\SeleniumLibrary\utils\types.py", line 42, in _convert_timeout
+    return timestr_to_secs(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\robot\utils\robottime.py", line 60, in timestr_to_secs
+    raise ValueError(f"Invalid time string '{timestr}'.")
+ValueError: Invalid time string 'This test has a workflow that is created using keywords in'.</msg>
+</errors>
+</robot>
